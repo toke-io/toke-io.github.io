@@ -1,0 +1,26 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #222;
+  transition: background-color .3s ease; }
+
+#content {
+  color: white; }
+  #content #settings .slider {
+    margin-bottom: 2rem; }
+  #content button[type="submit"] {
+    width: 100%; }
+
+#message {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  display: none; }
+  #message h1, #message h2 {
+    color: white; }
+
+/*# sourceMappingURL=tokeio.css.map */

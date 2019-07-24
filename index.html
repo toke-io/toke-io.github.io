@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tokeio, timer for getting high</title>
+  <meta name="description" content="Tokeio is an interval timer for getting high. Supports randomness for a fun session.">
+  <link rel="icon" href="static/img/tokeio-icon.png">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="static/vendor/materialize-1.0.0/materialize.min.css"  media="screen,projection"/>
+
+  <link type="text/css" rel="stylesheet" href="static/css/tokeio.css">
+  <link type="text/css" rel="stylesheet" href="static/vendor/nouislider/nouislider.css">
+
+  <script src="static/vendor/jquery-2.2.4.min.js"></script>
+  <script src="static/vendor/materialize-1.0.0/materialize.min.js"></script>
+  <script src="static/vendor/nouislider/nouislider.min.js"></script>
+  <script src="static/js/app.js"></script>
+  <script src="static/js/tokeio-0.1.js"></script>
+</head>
+
+<body>
+
+  <div id="content" class="container">
+    <div class="row">
+      <div class="col s12 m12 l6 offset-l3">
+        <h1>Tokeio</h1>
+        <!-- To-do: add info -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 m12 l6 offset-l3">
+        <form id="settings">
+
+          <div class="row">
+            <div class="input-field col s12 l6">
+              <div id="time-between-hits-slider" class="slider"></div>
+              <label for="time-between-hits-slider">Time Between Hits (minutes)</label>
+            </div>
+            <div class="input-field col s12 l6">
+              <div id="hit-duration-slider" class="slider"></div>
+              <label for="hit-duration-slider">Hit Duration Time (seconds)</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12 l6">
+              <div id="prepare-duration-slider" class="slider"></div>
+              <label for="prepare-duration-slider">Prepare Time (seconds)</label>
+            </div>
+            <div class="input-field col s12 l6">
+              <div id="re-hit-slider" class="slider"></div>
+              <label for="re-hit-slider">Percent chance to hit again</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col s4 l4">
+              <label>
+                <input type="color" name="interim-color" value="#f44336">
+                <span>Interim Color</span>
+              </label>
+            </div>
+            <div class="col s4 l4">
+              <label>
+                <input type="color" name="prepare-color" value="#ffeb3b">
+                <span>Prepare Color</span>
+              </label>
+            </div>
+            <div class="col s4 l4">
+              <label>
+                <input type="color" name="hit-color" value="#4caf50">
+                <span>Hit Color</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-field col s12 l12">
+              <button class="btn waves-effect waves-light" type="submit" name="action">Begin
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id="message">
+    <h2 align="center"></h2>
+    <h1 align="center"></h1>
+  </div>
+
+  <!-- <div id="stats" class="row">
+    <div class="col s12 m12 l12">
+      <span class="new badge" data-badge-caption="hits"></span>
+      <span class="new badge" data-badge-caption="hit seconds"></span>
+      <span class="new badge time-left" data-badge-caption="left"></span>
+    </div>
+  </div> -->
+</body>
+</html>
